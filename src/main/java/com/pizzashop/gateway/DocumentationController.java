@@ -18,6 +18,9 @@ public class DocumentationController implements SwaggerResourcesProvider {
     public List get() {
         List resources = new ArrayList<>();
         resources.add(swaggerResource("cart", "/pizzashop/cart/v2/api-docs", "2.0"));
+        resources.add(swaggerResource("login", "/pizzashop/login/v2/api-docs", "2.0"));
+        resources.add(swaggerResource("repository", "/pizzashop/repository/v2/api-docs", "2.0"));
+        resources.add(swaggerResource("email", "/pizzashop/email/v2/api-docs", "2.0"));
         return resources;
     }
 
